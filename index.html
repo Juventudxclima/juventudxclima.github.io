@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="pbg-container"></div>
+  <script type="text/javascript"
+    src="https://unpkg.com/profile-picture-generator@1.5.0/dist/profile-picture-generator.js"
+    integrity="sha384-26g7geqCMjr1i6cid56u5QUkDmm4Fs3hd+6zUGwkcfdrbSQ6pluSCQq85jga55Eb"
+    crossorigin="anonymous"></script>
+  <script type="application/javascript">
+    (function () {
+      window.ProfilePictureGenerator({
+        container: document.querySelector('.pbg-container'),
+        initialLanguage: 'de',
+        languages: {
+          de: {
+            name: 'Español',
+            uploadButtonTitle: "Genera tu foto de perfil",
+            downloadButtonTitle: "Descarga",
+            imageAltText: "Foto de perfil generada",
+            fileName: "ProfilePicture.png",
+            templateUrl: "https://raw.githubusercontent.com/Juventudxclima/juventudxclima.github.io/main/Fotogenerador.png",
+            imagePreview: "https://raw.githubusercontent.com/Juventudxclima/juventudxclima.github.io/main/PPP-PreviewProfilePicture.jpeg",
+            privacyNote: "El archivo seleccionado no se envía a ningún servidor. Toda la generación de imágenes tiene lugar en el navegador.",
+            privacyLinkText: "Política de privacidad (Inglés)"
+          },
+          en: {
+            name: 'English',
+            templateUrl: "https://raw.githubusercontent.com/Juventudxclima/juventudxclima.github.io/main/Fotogenerador.png",
+            imagePreview: "https://raw.githubusercontent.com/Juventudxclima/juventudxclima.github.io/main/PPP-PreviewProfilePicture.jpeg",
+          }
+        }
+      });
+    })();
+  </script> 
+</body>
+</html>
